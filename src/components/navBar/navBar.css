@@ -1,0 +1,26 @@
+
+.navbar-Container{
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: red;
+    box-shadow: rgba(233, 75, 175, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+.navbar-Container img{
+    width: 7rem;
+}
+
+.navbar-container-list{
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+}
+
+.navbar-container-list-item a{
+    padding: 1rem 2rem;
+    border: 1px solid #fff ;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
