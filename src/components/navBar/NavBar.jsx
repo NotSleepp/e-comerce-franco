@@ -11,9 +11,9 @@ export const NavBar = () =>{
             </div>
             <ul className="navbar-container-list">
                 <li className="navbar-container-list-item"><a href='/#'>Inicio</a></li>
-                <li className="navbar-container-list-item"><a href='/#'>Vintage</a></li>
-                <li className="navbar-container-list-item"><a href='/#'>Pixel Art</a></li>
-                <li className="navbar-container-list-item"><a href='/#'>Fantasia</a></li>
+                <li className="navbar-container-list-item"><a href='/#'>Juegos PC</a></li>
+                <li className="navbar-container-list-item"><a href='/#'>Shooters</a></li>
+                <li className="navbar-container-list-item"><a href='/#'>Mmorpg</a></li>
             </ul>
             <CartWidget/>
         </div>
