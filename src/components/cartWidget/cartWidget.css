@@ -1,13 +1,14 @@
-
+.contenedor-carrito{
+    display: flex;
+    align-items: center;
+}
 .carrito-contador{
-    position:absolute; 
     border: 1.5px solid black;
     border-radius: 50%; 
-    padding: 0 5px; 
+    padding: 0 5px;
+    height: 50%; 
     font-size: .8rem;
     text-align:center;
-    top: 1rem;
-    right: 30rem;
     background-color: #e5e4e28f; 
     box-shadow : -1px 1px 5px black;
 }

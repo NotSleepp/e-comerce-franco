@@ -1,10 +1,13 @@
+import { useEffect } from "react";
+import { useParams } from "react-router-dom";
+import { products } from "../../productsMock";
 import { ItemCount } from "../itemCount/ItemCount"
 import { ItemList } from "../itemList/ItemList";
 
 
 export const ItemListContainer = ({greeting}) => {
 
-  
+
   function onAdd(cantidadCompra) {
     console.log(cantidadCompra);
   }
