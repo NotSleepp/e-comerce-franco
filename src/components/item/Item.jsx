@@ -1,18 +1,42 @@
 import { Link } from "react-router-dom";
+import {
+  Card,
+  CardMedia,
+  CardContent,
+  Typography,
+  CardActions,
+  Button
+} from "@mui/material";
 
 
-export const Item = ({element}) => {
+export const Item = ({ element }) => {
   return (
-
-    <Link to={`/itemDetail/${element.id}`}>
-      <div>
-          <h2>{element.title}</h2>
-          <img src={element.thumbnail} alt="imagen juego" />
-          <h3>Plataforma: {element.platform}</h3>
-          <h4>{element.short_description}</h4>
-          <p>desarrollado por: {element.developer}</p>
-      </div> 
-    </Link>
+      <Card sx={{ maxWidth: 345}}>
+      <CardMedia
+        component="img"
+        alt={`juego ${element.title}`}
+        height="140"
+        image={element.thumbnail}
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          {element.title}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          {element.short_description}
+        </Typography>
+        <Typography sx={{ marginTop: "1rem" }}>
+          Plataforma: {element.platform}
+        </Typography>
+        <Typography>Desarrollador: {element.developer}</Typography>
+      </CardContent>
+      <CardActions>
+        <Link to={`/itemDetail/${element.id}`}>
+          <Button size="small">Learn More</Button>
+        </Link>
+      </CardActions>
+    </Card>
+  
     
   );
 };

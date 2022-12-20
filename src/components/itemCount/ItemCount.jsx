@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
- 
+import {products} from "../../productsMock"
 
 export const ItemCount = ({ cantidadInicial, onAdd }) => {
 
   const [cantidad, setCantidad] = useState(parseInt(cantidadInicial));
-  let stock = [];
+  let stock = products.length;
 
   function menos() {
     if (cantidad > 1) {
@@ -13,7 +13,7 @@ export const ItemCount = ({ cantidadInicial, onAdd }) => {
   }
 
   function mas() {
-    if (cantidad < stock.length) {
+    if (cantidad < stock) {
       setCantidad(cantidad + 1);
     }
   }
@@ -26,9 +26,9 @@ export const ItemCount = ({ cantidadInicial, onAdd }) => {
     <div>
       <button onClick={menos}>-</button>
       <p>{cantidad}</p>
-      <button disabled={stock.length < 1} onClick={mas}>+</button>
+      <button disabled={stock < 1} onClick={mas}>+</button>
       <button
-        disabled={stock.length < 1}
+        disabled={stock < 1}
         onClick={() => {
           onAdd(cantidad);
         }}

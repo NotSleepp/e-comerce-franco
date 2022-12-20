@@ -22,7 +22,7 @@ export const ItemList = () => {
    
 
     return (
-        <div>
+        <div style={{display:"flex", justifyContent:"space-between", margin:"1rem 3rem"}}>
 
             {items.map((element)=>{
                 return (
