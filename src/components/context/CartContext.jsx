@@ -43,10 +43,16 @@ export const CartContextProvider = ({children}) => {
         setcart([]);
     }
 
+    const removeItem = (itemId)=>{
+        const newElement = cart.filter((productos)=> productos.id !== itemId);
+        setcart(newElement);
+    }
+
     const data = {
         cart,
         addToCart,
-        clearCart
+        clearCart,
+        removeItem
     }
     
     
