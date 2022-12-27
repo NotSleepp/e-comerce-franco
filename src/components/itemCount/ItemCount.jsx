@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import {products} from "../../productsMock"
 
-export const ItemCount = ({ cantidadInicial, onAdd }) => {
+
+export const ItemCount = ({ cantidadInicial, onAdd, stock }) => {
 
   const [cantidad, setCantidad] = useState(parseInt(cantidadInicial));
-  let stock = products.length;
+
 
   function menos() {
     if (cantidad > 1) {
