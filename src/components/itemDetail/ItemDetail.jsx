@@ -4,11 +4,13 @@ import { ItemCount } from "../itemCount/ItemCount";
 
 export const ItemDetail = ({ product }) => {
 
-  const {addToCart} = useContext(CartContext)
+  const {addToCart, getQuantityById} = useContext(CartContext)
 
   function onAdd(cantidad) {
     addToCart( {...product ,cantidad:cantidad})
   }
+
+  const quantity = getQuantityById(product.id)
 
   return (
     <div>
@@ -18,7 +20,7 @@ export const ItemDetail = ({ product }) => {
       <h4>{product.short_description}</h4>
       <p>desarrollado por: {product.developer}</p>
       <div>
-        <ItemCount cantidadInicial={1} onAdd={onAdd} stock={product.stock}/>
+        <ItemCount cantidadInicial={quantity} onAdd={onAdd} stock={product.stock}/>
       </div>
     </div>
   );

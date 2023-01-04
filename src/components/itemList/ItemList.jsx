@@ -22,13 +22,16 @@ export const ItemList = () => {
    
 
     return (
-        <div style={{display:"flex", justifyContent:"space-between", margin:"1rem 3rem"}}>
+        <div style={{display: "flex",
+            justifyContent:"space-around",
+            width:"100%",
+            flexWrap: "wrap",
+            columnGap: "1rem"}}>
 
             {items.map((element)=>{
                 return (
                 <Item key={element.id} element={element}/>
                 )
-                
             })}
 
         </div>

@@ -11,11 +11,11 @@ import {
 
 export const Item = ({ element }) => {
   return (
-      <Card sx={{ maxWidth: 345}}>
+      <Card sx={{ maxWidth: 345, marginTop:"1rem"}}>
       <CardMedia
         component="img"
         alt={`juego ${element.title}`}
-        height="140"
+        height="170.5"
         image={element.thumbnail}
       />
       <CardContent>
@@ -29,6 +29,7 @@ export const Item = ({ element }) => {
           Plataforma: {element.platform}
         </Typography>
         <Typography>Desarrollador: {element.developer}</Typography>
+        <Typography>Precio: {element.precio}</Typography>
       </CardContent>
       <CardActions>
         <Link to={`/itemDetail/${element.id}`}>

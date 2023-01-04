@@ -8,7 +8,8 @@
         "genre": "Shooter",
         "platform": "PC (Windows)",
         "developer": "Blizzard Entertainment",
-        "stock": 8
+        "stock": 8,
+        "precio": 1000
         },
         {
         "id": 521,
@@ -18,7 +19,8 @@
         "genre": "MMOARPG",
         "platform": "PC (Windows)",
         "developer": "Blizzard Entertainment",
-        "stock": 10
+        "stock": 10,
+        "precio": 1000
         },
         {
         "id": 517,
@@ -28,7 +30,8 @@
         "genre": "ARPG",
         "platform": "PC (Windows)",
         "developer": "Smilegate RPG",
-        "stock": 8
+        "stock": 8,
+        "precio": 1000
         },
         {
         "id": 516,
@@ -38,7 +41,8 @@
         "genre": "Shooter",
         "platform": "PC (Windows)",
         "developer": "KRAFTON, Inc.",
-        "stock": 5
+        "stock": 5,
+        "precio": 1000
         },
         {
         "id": 508,
@@ -48,7 +52,8 @@
         "genre": "Shooter",
         "platform": "PC (Windows)",
         "developer": "Darkflow Software",
-        "stock": 6
+        "stock": 6,
+        "precio": 1000
         }
 
  ]

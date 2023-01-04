@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 
-export const ItemCount = ({ cantidadInicial, onAdd, stock }) => {
+export const ItemCount = ({ cantidadInicial=1, onAdd, stock }) => {
 
   const [cantidad, setCantidad] = useState(parseInt(cantidadInicial));
 
@@ -23,6 +23,7 @@ export const ItemCount = ({ cantidadInicial, onAdd, stock }) => {
   }, [cantidadInicial]);
 
   return (
+
     <div>
       <button onClick={menos}>-</button>
       <p>{cantidad}</p>
@@ -36,5 +37,9 @@ export const ItemCount = ({ cantidadInicial, onAdd, stock }) => {
         Agregar al Carrito
       </button>
     </div>
+    
+    
+
+    
   );
 }
